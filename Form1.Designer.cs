@@ -36,12 +36,12 @@
             label6 = new Label();
             label7 = new Label();
             groupBox1 = new GroupBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            textBox7 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            cmbProgram = new ComboBox();
+            cmbGender = new ComboBox();
+            txtMiddleName = new TextBox();
+            txtFirstName = new TextBox();
+            txtAge = new TextBox();
+            txtLastName = new TextBox();
             textBox1 = new TextBox();
             groupBox2 = new GroupBox();
             button3 = new Button();
@@ -119,12 +119,12 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(comboBox2);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox7);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(cmbProgram);
+            groupBox1.Controls.Add(cmbGender);
+            groupBox1.Controls.Add(txtMiddleName);
+            groupBox1.Controls.Add(txtFirstName);
+            groupBox1.Controls.Add(txtAge);
+            groupBox1.Controls.Add(txtLastName);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label7);
@@ -139,49 +139,49 @@
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
             // 
-            // comboBox2
+            // cmbProgram
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(187, 50);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(217, 23);
-            comboBox2.TabIndex = 15;
+            cmbProgram.FormattingEnabled = true;
+            cmbProgram.Location = new Point(187, 50);
+            cmbProgram.Name = "cmbProgram";
+            cmbProgram.Size = new Size(217, 23);
+            cmbProgram.TabIndex = 15;
             // 
-            // comboBox1
+            // cmbGender
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(137, 167);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
-            comboBox1.TabIndex = 14;
+            cmbGender.FormattingEnabled = true;
+            cmbGender.Location = new Point(137, 167);
+            cmbGender.Name = "cmbGender";
+            cmbGender.Size = new Size(133, 23);
+            cmbGender.TabIndex = 14;
             // 
-            // textBox7
+            // txtMiddleName
             // 
-            textBox7.Location = new Point(381, 108);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 23);
-            textBox7.TabIndex = 13;
+            txtMiddleName.Location = new Point(381, 108);
+            txtMiddleName.Name = "txtMiddleName";
+            txtMiddleName.Size = new Size(100, 23);
+            txtMiddleName.TabIndex = 13;
             // 
-            // textBox4
+            // txtFirstName
             // 
-            textBox4.Location = new Point(223, 108);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(152, 23);
-            textBox4.TabIndex = 10;
+            txtFirstName.Location = new Point(223, 108);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(152, 23);
+            txtFirstName.TabIndex = 10;
             // 
-            // textBox3
+            // txtAge
             // 
-            textBox3.Location = new Point(28, 167);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 9;
+            txtAge.Location = new Point(28, 167);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(100, 23);
+            txtAge.TabIndex = 9;
             // 
-            // textBox2
+            // txtLastName
             // 
-            textBox2.Location = new Point(28, 108);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(187, 23);
-            textBox2.TabIndex = 8;
+            txtLastName.Location = new Point(28, 108);
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new Size(187, 23);
+            txtLastName.TabIndex = 8;
             // 
             // textBox1
             // 
@@ -209,6 +209,7 @@
             button3.TabIndex = 12;
             button3.Text = "Refresh";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // dataGridView1
             // 
@@ -228,6 +229,7 @@
             button1.TabIndex = 10;
             button1.Text = "Register";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -273,12 +275,12 @@
         private Label label7;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
-        private TextBox textBox7;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private ComboBox cmbProgram;
+        private ComboBox cmbGender;
+        private TextBox txtMiddleName;
+        private TextBox txtFirstName;
+        private TextBox txtAge;
+        private TextBox txtLastName;
         private TextBox textBox1;
         private Button button3;
         private DataGridView dataGridView1;
